@@ -1,0 +1,178 @@
+body {
+    background-image: url("img/static.gif");
+}
+
+#flavortext {
+    position: absolute;
+    bottom: 32px;
+    font-family: arial;
+    font-size: 16pt;
+    font-weight: bold;
+    color: #000000;
+    text-align: center;
+    background-color: rgba(255, 255, 255, .4);
+    z-index: -1;
+}
+
+#pokeball-link {
+    position: absolute;
+    left: 50%;
+    bottom: 0px;
+    width: 32px;
+}
+
+#play {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+}
+
+#play-image {
+    position: fixed;
+    display: block;
+    top: 30%;
+    left: 50%;
+    width: 80%;
+    margin-left: -40%;
+}
+
+#normal {
+    display: block;
+    margin: auto;
+    transform: scale(5);
+    animation: scale;
+    animation-duration: 90s;
+    animation-timing-function: ease-in;
+    animation-play-state: paused;
+}
+
+#spooky-start {
+    position: absolute;
+    display: block;
+    width: 100%;
+    top: 0px;
+    opacity: 0;
+    animation: blink-start;
+    animation-duration: 64s;
+    animation-timing-function: linear;
+    animation-play-state: paused;
+}
+
+#spooky-constant {
+    position: absolute;
+    display: block;
+    width: 100%;
+    top: 0px;
+    opacity: 0;
+    animation: blink-constant;
+    animation-duration: .064s;
+    animation-timing-function: linear;
+    animation-iteration-count: 935;
+    animation-direction: alternate;
+    animation-delay: 25.92s;
+    animation-play-state: paused;
+}
+
+#lavender {
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+}
+
+#sand {
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+}
+
+@keyframes scale {
+    from { transform: scale(.1); }
+    to   { transform: scale(5); }
+}
+
+@keyframes blink-start {
+    0%    { opacity: 0; }
+
+    24%   { opacity: 0; }
+    24.1% { opacity: 1; }
+    24.2% { opacity: 0; }
+    24.3% { opacity: 1; }
+    24.4% { opacity: 0; }
+    24.5% { opacity: 1; }
+    24.6% { opacity: 0; }
+    24.7% { opacity: 1; }
+    24.8% { opacity: 0; }
+    24.9% { opacity: 1; }
+    25.0% { opacity: 0; }
+
+    28.6% { opacity: 0; }
+    28.7% { opacity: 1; }
+    28.8% { opacity: 0; }
+
+    29.5% { opacity: 0; }
+    29.6% { opacity: 1; }
+    29.7% { opacity: 0; }
+    29.8% { opacity: 1; }
+    29.9% { opacity: 0; }
+    30.0% { opacity: 1; }
+    30.1% { opacity: 0; }
+    30.2% { opacity: 1; }
+    30.3% { opacity: 0; }
+    30.4% { opacity: 1; }
+    30.5% { opacity: 0; }
+
+    34.8% { opacity: 0; }
+    34.9% { opacity: 1; }
+    35.0% { opacity: 0; }
+    35.1% { opacity: 1; }
+    35.2% { opacity: 0; }
+    35.3% { opacity: 1; }
+    35.4% { opacity: 0; }
+    35.5% { opacity: 1; }
+    35.6% { opacity: 0; }
+    35.7% { opacity: 1; }
+    35.8% { opacity: 0; }
+
+    36.3% { opacity: 0; }
+    36.4% { opacity: 1; }
+    36.5% { opacity: 0; }
+    36.6% { opacity: 1; }
+    36.7% { opacity: 0; }
+    36.8% { opacity: 1; }
+    36.9% { opacity: 0; }
+    37.0% { opacity: 1; }
+    37.1% { opacity: 0; }
+    37.2% { opacity: 1; }
+    37.3% { opacity: 0; }
+
+    37.8% { opacity: 0; }
+    37.9% { opacity: 1; }
+    38.0% { opacity: 0; }
+    38.1% { opacity: 1; }
+    38.2% { opacity: 0; }
+    38.3% { opacity: 1; }
+    38.4% { opacity: 0; }
+    38.5% { opacity: 1; }
+    38.6% { opacity: 0; }
+    38.7% { opacity: 1; }
+    38.8% { opacity: 0; }
+
+    39.3% { opacity: 0; }
+    39.4% { opacity: 1; }
+    39.5% { opacity: 0; }
+    39.6% { opacity: 1; }
+    39.7% { opacity: 0; }
+    39.8% { opacity: 1; }
+    39.9% { opacity: 0; }
+    40.0% { opacity: 1; }
+    40.1% { opacity: 0; }
+    40.2% { opacity: 1; }
+    40.3% { opacity: 0; }
+
+    100%  { opacity: 0; }
+}
+
+@keyframes blink-constant {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>palossandstorm</title>
+    <!-- by @kyleryanboyle -->
+    <!-- inspired by espurr.net (rip in peace) -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="favicon.ico">
+    <meta name="description" content="Headphones recommended. Palossand controls human adults, making them build a sand castle that provides camouflage and also raises its defensive abilities.">
+    <script>
+      function startMusic() { // should start automatically, but doesn't seem to on mobile
+        document.getElementById("lavender").play();
+        document.getElementById("sand").play();
+      }
+      function startScaleAnimation() {
+        document.getElementById("normal").style.animationPlayState = "running";
+      }
+      function startBlinkAnimation() {
+        document.getElementById("spooky-start").style.animationPlayState = "running";
+        document.getElementById("spooky-constant").style.animationPlayState = "running";
+        document.getElementById("play").style.display = "none";
+      }
+    </script>
+  </head>
+  <body>
+    <div id="play" onclick="startMusic()"><img id="play-image" src="img/play-button.png"></div>
+    <img id="normal" src="img/palossand.png">
+    <img id="spooky-start" src="img/palossand-spooky.png">
+    <img id="spooky-constant" src="img/palossand-spooky.png">
+    <div id="flavortext">Palossand loves the vitality of Pok&eacute;mon and drags small Pok&eacute;mon into its body so it can steal their life force. Its sandy vortex swallows them up in a heartbeat! Pok&eacute;mon dragged into Palossand leave traces of their ill will behind. It's thought that this negative energy may be the starting point of new Sandygast...</div>
+    <a href="http://www.pokemon-sunmoon.com/en-us/pokemon/palossand/"><img id="pokeball-link" src="img/open-in-new.png"></a>
+    <audio id="lavender" controls autoplay onplay="startScaleAnimation()">
+      <source src="mp3/lavender-town.mp3" type="audio/mpeg">
+    </audio>
+    <audio id="sand" controls autoplay onplay="startBlinkAnimation()">
+      <source src="mp3/darude-sandstorm.mp3" type="audio/mpeg">
+    </audio>
+  </body>
+</html>
